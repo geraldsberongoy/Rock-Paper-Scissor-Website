@@ -1,0 +1,215 @@
+:root {
+    --khaki: #BEAEA3ff;
+    --brown-sugar: #C37657ff;
+    --silver: #C0BDBCff;
+    --caput-mortuum: #4D2726ff;
+    --caput-mortuum-2: #48262Cff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, var(--khaki), var(--brown-sugar), var(--silver), var(--caput-mortuum), var(--caput-mortuum-2));
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 490px;
+    width: 800px;
+    margin: 30px auto;
+    border-radius: 20px;
+    overflow: hidden; /* Ensure content doesn't overflow the container */
+}
+
+.login-section {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background-color: #E2F1E7;
+    justify-content: center;
+    border-radius: 20px 0 0 20px;
+    padding: 20px; /* Add padding for better spacing */
+}
+
+.welcome {
+    text-align: center;
+    color: #3581B5;
+    padding: 10px 0;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.form input {
+    padding: 5px;
+    border-radius: 10px;
+    border: 1.5px solid black;
+    height: 35px;
+    margin-bottom: 10px; /* Add margin-bottom for spacing between inputs */
+}
+
+.form label {
+    color: #3581B5;
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 5px; /* Add margin-bottom for spacing between label and input */
+}
+
+.forgot-password {
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+form button {
+    background-color: #3581B5;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100px;
+    margin: 10px auto; /* Add margin for spacing */
+    transition: background-color 0.3s, opacity 0.3s;
+    font-weight: bold;
+}
+
+form button:hover {
+    background-color: #1aabb6;
+}
+
+form button:active {
+    opacity: 0.8;
+}
+
+.or-divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 10px 0; /* Add margin for spacing */
+}
+
+.or-divider hr {
+    flex: 1;
+    border: none;
+    border-top: 2px solid #3581B5;
+}
+
+.or-divider p {
+    margin: 0 10px;
+    color: #3581B5;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.google-btn {
+    width: auto;
+    margin: 10px auto;   
+    padding: 10px 20px;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #DB4437; /* Google button specific background color */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, opacity 0.3s; /* Add transition for hover and active states */
+}
+
+.google-btn:hover {
+    background-color: #c23321;
+}
+
+.google-btn:active {
+    opacity: 0.8;
+}
+
+.create-account {
+    text-align: center;
+}
+
+a {
+    text-decoration: underline;
+    text-decoration-color: black; /* Set the underline color to black */
+    color: black;
+    font-size: 12px;
+    font-weight: bold;
+    transition: text-decoration-color 0.3s, color 0.3s, opacity 0.3s; /* Add transition for hover and active states */
+}
+
+a:hover {
+    text-decoration-color: #1aabb6; /* Change the underline color on hover */
+    color: #1aabb6;
+}
+
+a:active {
+    opacity: 0.8; /* Change the opacity of the link on click */
+}
+
+.graphic-section {
+    width: 50%; /* Ensure the div takes the full width of its container */
+    height: auto; /* Ensure the div takes the full height of its container */
+    position: relative;
+    border-radius: 0 20px 20px 0;
+    overflow: hidden; /* Ensure content doesn't overflow the container */
+}
+
+.graphic-section img {
+    width: 100%; /* Stretch the image to fill the width of the div */
+    height: 100%; /* Stretch the image to fill the height of the div */
+    object-fit: cover; /* Ensure the image covers the entire div while maintaining aspect ratio */
+    position: absolute; /* Position the image absolutely within the div */
+    top: 0;
+    left: 0;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+    }
+
+    .login-section {
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    .graphic-section {
+        display: none; /* Hide the graphic section */
+    }
+}
+
+@media (max-width: 480px) {
+    .form input, form button, .google-btn {
+        width: 100%;
+    }
+
+    .form button, .google-btn {
+        padding: 10px;
+    }
+
+    .or-divider p {
+        font-size: 10px;
+    }
+
+    .or-divider hr {
+        border-top: 1px solid #3581B5;
+    }
+}
