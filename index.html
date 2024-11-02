@@ -15,15 +15,15 @@
                 <h2>Welcome to <br>Rock Paper Scissors Game</h2>
             </div>
             
-            <form class="form">
+            <form class="form" onsubmit="return validateLogin()">
                 <label for="email">Username or Email:</label>
-                <input type="email" id="email" placeholder="email@gmail.com" class="email">
+                <input type="text" id="username" placeholder="email@gmail.com" class="email">
                 <label for="password">Password:</label>
                 <input type="password" id="password" placeholder="*******">
                 <div class="forgot-password">
                     <a href="#">Forgot Password?</a>
                 </div>
-                <button type="submit" class="login-btn" onclick="redirectToInterface()"><p>Login</p></button>
+                <button type="submit" class="login-btn"><p>Login</p></button>
 
                 <div class="or-divider">
                     <hr> <p>or</p> <hr>
