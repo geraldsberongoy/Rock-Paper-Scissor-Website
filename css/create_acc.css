@@ -108,19 +108,22 @@ body {
 .terms {
     display: flex;
     align-items: center;
-    margin: 0;
+    margin: 0 0 10px 0;
     padding: 0;
 }
 
 .terms input[type="checkbox"] {
+    display: flex;
     margin: 0;
     padding: 0;
+    height: auto;
 }
 
 .terms label {
     color: #3581B5;
     font-size: 12px;
     margin-left: 5px;
+    margin-bottom: 0;
 }
 
 .terms a {
@@ -218,6 +221,19 @@ a:active {
         width: 100%;
     }
 
+
+    .form button, .google-btn {
+        padding: 10px;
+    }
+
+    .or-divider p {
+        font-size: 10px;
+    }
+
+    .or-divider hr {
+        border-top: 1px solid #3581B5;
+    }
+    
     .form button, .google-btn {
         padding: 10px;
     }
