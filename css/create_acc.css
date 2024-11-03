@@ -108,7 +108,7 @@ body {
 .terms {
     display: flex;
     align-items: center;
-    margin: 0 0 10px 0;
+    margin: 5px 0 15px 0;
     padding: 0;
 }
 
@@ -214,6 +214,7 @@ a:active {
     .graphic-section {
         display: none;
     }
+    
 }
 
 @media (max-width: 480px) {
@@ -222,27 +223,27 @@ a:active {
     }
 
 
-    .form button, .google-btn {
+    .form button {
         padding: 10px;
     }
 
-    .or-divider p {
-        font-size: 10px;
+    .name{
+        flex-direction: column;
     }
 
-    .or-divider hr {
-        border-top: 1px solid #3581B5;
-    }
-    
-    .form button, .google-btn {
-        padding: 10px;
+    .firstname{
+        margin-right: 0px;
+        width: 100%;
     }
 
-    .or-divider p {
-        font-size: 10px;
+    .lastname{
+        margin-left: 0px;
+        width: 100%;
     }
 
-    .or-divider hr {
-        border-top: 1px solid #3581B5;
+    .firstname-label, .lastname-label{
+        margin-bottom: 5px;
     }
+
+
 }
