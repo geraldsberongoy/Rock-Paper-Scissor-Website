@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="css/create_acc.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <!-- Create Account Section -->
+        <div class="login-section">
+            <div class="welcome">
+                <h2><i class="fa-solid fa-user"></i> Create your Account</h2>
+            </div>
+            
+            <form class="form" onsubmit="return validateLogin()">
+                <div class="name">
+                    <div class="firstname">
+                        <label for="firstname" class="firstname-label">Name:</label>
+                        <input type="text" id="firstname" placeholder="John">
+                    </div>
+                    <div class="lastname">
+                        <label for="lastname" class="lastname-label">Surname:</label>
+                        <input type="text" id="lastname" placeholder="Doe">
+                    </div>
+                </div>
+                <label for="email">Email:</label>
+                <input type="text" id="email" placeholder="email@gmail.com">
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="*******">
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" placeholder="*******">
+                <div class="terms">
+                    <input type="checkbox" id="terms" name="terms">
+                    <label for="terms">I agree to the <a href="#">terms and conditions</a></label>
+                </div>
+                
+                <button type="submit" class="create-account"><p>Create Account</p></button>
+                <p class="already-acc">Already have an account? <a href="index.html">Log in</a></p>
+
+            </form>
+        </div>
+        <!-- Graphic Section -->
+        <div class="graphic-section">
+            <img src="images/login-page-graphic.png" alt="Rock Paper Scissors Graphic" class="img">
+        </div>
+    </div>
+</body>
+</html>
