@@ -84,6 +84,11 @@ body {
     background-color: #1E3A5C;
 }
 
+.container button a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
 a {
     text-decoration: underline;
     text-decoration-color: black;
